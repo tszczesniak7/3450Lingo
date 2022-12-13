@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="854.0" style="-fx-background-color: #8436eb;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamlingo.PrimaryController">
+    <children>
+        <HBox layoutX="22.0" layoutY="96.0" prefHeight="87.0" prefWidth="816.0" spacing="40.0">
+         <children>
+             <Button mnemonicParsing="false" onAction="#switchToLangScrn" prefHeight="87.0" prefWidth="134.0" text="View Language" wrapText="true" />
+             <Button mnemonicParsing="false" onAction="#switchToSentencesScrn" prefHeight="87.0" prefWidth="134.0" text="Practice Sentence Structure" wrapText="true" />
+             <Button mnemonicParsing="false" onAction="#switchToSyntaxScrn" prefHeight="87.0" prefWidth="134.0" text="View Syntax" wrapText="true" />
+             <Button mnemonicParsing="false" onAction="#switchToVerbTenseScrn" prefHeight="87.0" prefWidth="134.0" text="View Verb Tenses" wrapText="true" />
+             <Button mnemonicParsing="false" onAction="#switchToHomeScrn" prefHeight="87.0" prefWidth="134.0" text="Home Screen" wrapText="true" />
+         </children>
+        </HBox>
+      <TableView fx:id="langTable" layoutX="190.0" layoutY="228.0" prefHeight="377.0" prefWidth="655.0">
+        <columns>
+          <TableColumn fx:id="idlanguages" prefWidth="83.0" text="Language ID" />
+          <TableColumn fx:id="_language" prefWidth="92.0" text="Language" />
+            <TableColumn fx:id="language_family" prefWidth="122.0" text="Language Family" />
+            <TableColumn fx:id="progenative_language" prefWidth="153.0" text="Progenative Language" />
+        </columns>
+      </TableView>
+      <Button fx:id="showLangs" layoutX="27.0" layoutY="279.0" mnemonicParsing="false" onAction="#loadData" prefHeight="65.0" prefWidth="120.0" text="Show Languages" />
+      <Button fx:id="addLangButton" layoutX="27.0" layoutY="417.0" mnemonicParsing="false" onAction="#getAddView" prefHeight="65.0" prefWidth="120.0" text="Add a Language" />
+      <HBox prefHeight="87.0" prefWidth="854.0" style="-fx-background-color: #ebc936;">
+         <children>
+            <Label alignment="CENTER" prefHeight="112.0" prefWidth="856.0" text="Language General Info" textAlignment="CENTER" textFill="#8436eb">
+               <font>
+                  <Font name="Cooper Black" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+    </children>
+</Pane>

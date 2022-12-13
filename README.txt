@@ -1,0 +1,2 @@
+Note: the package in the Java code has directory of /com/example/teamlingo , within resources for where our IntelliJ workspace is.
+JavaFX, JDBC, and Java are required libraries/dependencies to run the code.

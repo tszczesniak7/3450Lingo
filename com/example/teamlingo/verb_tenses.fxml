@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="941.0" style="-fx-background-color: #8436eb;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teamlingo.VerbTenseController">
+    <children>
+        <HBox layoutX="22.0" layoutY="96.0" prefHeight="87.0" prefWidth="816.0" spacing="40.0">
+         <children>
+             <Button mnemonicParsing="false" onAction="#switchToLangScrn" prefHeight="87.0" prefWidth="134.0" text="View Language" wrapText="true" />
+             <Button mnemonicParsing="false" onAction="#switchToSentencesScrn" prefHeight="87.0" prefWidth="134.0" text="Practice Sentence Structure" wrapText="true" />
+             <Button mnemonicParsing="false" onAction="#switchToSyntaxScrn" prefHeight="87.0" prefWidth="134.0" text="View Syntax" wrapText="true" />
+             <Button mnemonicParsing="false" onAction="#switchToVerbTenseScrn" prefHeight="87.0" prefWidth="134.0" text="View Verb Tenses" wrapText="true" />
+             <Button mnemonicParsing="false" onAction="#switchToHomeScrn" prefHeight="87.0" prefWidth="134.0" text="Home Screen" wrapText="true" />
+         </children>
+        </HBox>
+        <TableView fx:id="verbTenseTable" layoutX="11.0" layoutY="228.0" prefHeight="377.0" prefWidth="900.0">
+            <columns>
+                <TableColumn fx:id="idverb_tense" prefWidth="47.0" text="V. T. ID" />
+                <TableColumn fx:id="_language" prefWidth="67.0" text="Lang" />
+                <TableColumn fx:id="past_simple" prefWidth="72.0" text="Past Simple" />
+                <TableColumn fx:id="past_perfect" prefWidth="73.0" text="Past Perfect" />
+            <TableColumn fx:id="past_continuous" prefWidth="99.0" text="Past Continuous" />
+            <TableColumn fx:id="present_simple" text="Present Sim." />
+            <TableColumn fx:id="present_perfect" text="Present Perf." />
+            <TableColumn fx:id="present_continuous" prefWidth="81.0" text="Present Cont." />
+            <TableColumn fx:id="future_simple" prefWidth="70.0" text="Future Sim." />
+            <TableColumn fx:id="future_perfect" prefWidth="74.0" text="Future Perf." />
+            <TableColumn fx:id="future_continuous" prefWidth="79.0" text="Future Cont." />
+            <TableColumn fx:id="idsyntax" prefWidth="75.0" text="Syntax ID" />
+            </columns>
+        </TableView>
+        <Button fx:id="showSyntax" layoutX="27.0" layoutY="192.0" mnemonicParsing="false" onAction="#loadData" prefHeight="20.0" prefWidth="120.0" text="Show Languages" />
+        <Button fx:id="addLangButton" layoutX="157.0" layoutY="192.0" mnemonicParsing="false" onAction="#getAddView" prefHeight="20.0" prefWidth="120.0" text="Add Verb Tenses" />
+      <HBox layoutX="3.0" prefHeight="87.0" prefWidth="941.0" style="-fx-background-color: #ebc936;">
+         <children>
+            <Label alignment="CENTER" prefHeight="112.0" prefWidth="856.0" text="Language Verb Tenses" textAlignment="CENTER" textFill="#8436eb">
+               <font>
+                  <Font name="Cooper Black" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+    </children>
+</Pane>
